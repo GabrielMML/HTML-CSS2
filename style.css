@@ -1,0 +1,10 @@
+body{
+  background-color:black;
+}
+
+h2{
+  color:green;
+  font-family: 'Courier Prime', monospace;
+  text-shadow: 0 0 10px green;
+  text-align: center;
+}
