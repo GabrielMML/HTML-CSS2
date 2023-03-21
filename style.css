@@ -1,6 +1,6 @@
 body {
-  background-color: #242323;
-  color: white;
+  background-color: #d4bad8;
+  color: #a762ac;
   font-family: 'Courier Prime', monospace;
   text-align: center;
   height: 100vh;
@@ -17,4 +17,18 @@ body {
 #links {
   font-size: 1.5em;
   margin-top: 20px;
+}
+a {
+  color: #8d5889;
+}
+
+#module {
+  font-size: 1.5em;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }

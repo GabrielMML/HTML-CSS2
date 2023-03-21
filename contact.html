@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="links"></div>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script>
+    new TypeIt('#links', { 
+      lifeLike: false, 
+      speed: 50 
+    })
+    .type('My contact information:')
+    .break()
+    .pause(500)
+    .type('Email me at: gabriel.sanchez.brea@coderclass.nl')
+    .pause(500)
+    .break()
+    .type('Or call me: 0683603545')
+    .go();
+  </script>
+</body>
+</html>
+
