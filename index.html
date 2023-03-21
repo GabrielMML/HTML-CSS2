@@ -6,13 +6,40 @@
   <title>Hoofdpagina</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.js"></script>
-<script src="script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <h2>Hi, Im Gabriel.</h2>
+
+  <span id="name"></span>
+
+  <div id="links"></div>
+
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script>
+    new TypeIt("#name", {
+      strings: "Hello, my name is Gabriel!",
+      speed: 50,
+      waitUntilVisible: true,
+      afterComplete: (instance) => {
+        new TypeIt("#links", {
+          speed: 50,
+          waitUntilVisible: true
+        })
+        .type("Check out my Coderclass modules!")
+        .break()
+        .type('<a href="https://www.linkedin.com/in/gabriel123/"></a>')
+        .pause(500)
+        .break()
+        .type("and my ")
+        .type('<a href="https://github.com/gabriel123">GitHub repositories</a>')
+        .pause(500)
+        .go();
+      }
+    }).go();
+  </script>
 </body>
+
 </html>

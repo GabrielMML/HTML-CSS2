@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "typed.js": "^2.0.12"
+    "typed.js": "^2.0.12",
+    "typeit": "^8.7.1"
   }
 }
